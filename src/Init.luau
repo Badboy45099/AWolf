@@ -52,7 +52,7 @@ function AWolf:CreateWindow(Config: { Title: string?, Footnote: string? })
 	HeaderTitle.Name = "HeaderTitle"
 	HeaderTitle.Position = UDim2.fromOffset(180, 0)
 	HeaderTitle.Size = UDim2.fromOffset(140, 48)
-	HeaderTitle.Font = Enum.Font.Code
+	HeaderTitle.FontFace = Font.fromName("Bangers", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 	HeaderTitle.Text = Config.Title or " WolfTool"
 	HeaderTitle.TextColor3 = Color3.fromRGB(130, 6, 6)
 	HeaderTitle.TextSize = 24
@@ -81,7 +81,7 @@ function AWolf:CreateWindow(Config: { Title: string?, Footnote: string? })
 	LockButton.Position = UDim2.fromOffset(556, 12)
 	LockButton.Size = UDim2.fromOffset(60, 26)
 	LockButton.BackgroundColor3 = Color3.fromRGB(130, 6, 6)
-	LockButton.Font = Enum.Font.Code
+	LockButton.FontFace = Font.fromName("Code", Enum.FontWeight.Bold, Enum.FontStyle.Italic)
 	LockButton.Text = "LOCK"
 	LockButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 	LockButton.TextSize = 12
